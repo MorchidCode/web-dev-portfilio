@@ -124,10 +124,9 @@ nav > a {
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0;
+    grid-template-rows: 0.3fr 1fr;
+    grid-auto-rows: 1fr;
     gap: 40px;
-
 }
 
 .project-heading {
@@ -135,6 +134,8 @@ nav > a {
     grid-column-end: -1;
     display: flex;
     font-size: 2rem;
+    margin-bottom: 0;
+    margin: 0;
 }
 
 .project-card {
