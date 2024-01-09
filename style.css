@@ -143,11 +143,12 @@ nav > a {
     color: #272829;
     padding: 30px;
     width: 305px;
+    border-radius: 10px;
 } 
 
 .project-card img {
     height: 150px;
-    width: 300px;
+    width: 100%;
 }
 
 .footer-grid {
@@ -185,9 +186,9 @@ nav > a {
 }
 
 @media (max-width: 850px){
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }   
+    .project-card {
+        width: 250px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -218,9 +219,41 @@ nav > a {
     }
 }
 
+@media (max-width: 750px) {
+    #projects {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-item img {
+        height: 70px;
+    }
+    
+    #projects {
+        padding: 10%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
+    #introduction > div {
+        padding-left: 15px;
+    }
+    
     .skill-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card {
+        width: 230px;
     }
 }
