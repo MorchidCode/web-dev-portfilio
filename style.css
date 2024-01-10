@@ -66,10 +66,12 @@ nav > a {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 30px;
 }
 
 #about > div {
-    width: 60%;
+    max-width: 75%;
+    min-width: 50%;
     color: #272829;
     border: 10px solid #272829;
     border-radius: 10px;
@@ -110,8 +112,18 @@ nav > a {
     color: #272829;
 }
 
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .grid-item img {
     height: 100px;
+}
+
+.grid-item > h2 {
+    padding-bottom: 10px;
 }
 
 #projects {
@@ -189,6 +201,16 @@ nav > a {
     .project-card {
         width: 250px;
     }
+
+    #about h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    #introduction p {
+        font-size: 25px;
+        margin-top: 7px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -204,6 +226,7 @@ nav > a {
         margin-top: 7px;
     }
 
+    
     #about h2 {
         font-size: 2rem;
         margin: 0;
@@ -247,6 +270,14 @@ nav > a {
     .skill-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    .grid-item img {
+        height: 60px;
+    }
+
+    .grid-item h2{
+        font-size: 17px;
     }
     
     .project-card {
